@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productos SYSTEM "04_atributos.dtd">
+<productos>
+    <!-- 1. Falta el atributo obligatorio 'nombre'. Aunque esté vacio -->
+    <!-- 2. El atributo categoría, como se observa, puede existir o no al ser opcional -->
+    <producto nombre="" />
+    <producto nombre="Leche" categoria="Lácteos" />
+    <!-- Fallará por no tener el atributo nombre -->
+    <!-- <producto categoria="Lácteos"/>   -->
+
+    <!-- 3. El atributo 'tienda' tiene un valor distinto al #FIXED "Mercadona". No puede ser tampoco vacío -->
+    <producto nombre="Pan" /> 
+    <producto nombre="Pan" tienda="Mercadona"/>
+    <!-- Fallará por tener el atributo tienda con un valor de una cadena vacía -->
+    <!-- <producto nombre="Pan" tienda=""/>   --> 
+     <!-- Fallará por tener el atributo tienda con un valor diferente a "Mercadona" -->
+    <!-- <producto nombre="Pan" tienda="Carrefour"/>   -->
+</productos>

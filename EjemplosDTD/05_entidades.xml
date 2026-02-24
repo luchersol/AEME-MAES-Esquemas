@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro [
+    <!-- Definición de elementos -->
+    <!ELEMENT libro (titulo, autor, editorial)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+
+    <!-- Entidades internas -->
+    <!ENTITY editorial_principal "Editorial Universitaria">
+]>
+
+<!-- Copia la ruta de este archivo y abrela en tu navegador para visualizar como se vería el atributo editorial -->
+<libro>
+    <titulo>Aprendiendo XML</titulo>
+    <autor>Juan</autor>
+    <editorial>&editorial_principal;</editorial> 
+</libro>

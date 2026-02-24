@@ -1,0 +1,7 @@
+<!-- Elemento principal -->
+<!ELEMENT nota (para, de, cuerpo)>
+
+<!-- Elementos internos -->
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>

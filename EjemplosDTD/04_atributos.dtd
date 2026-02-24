@@ -1,0 +1,6 @@
+<!ELEMENT productos (producto+)>
+
+<!ELEMENT producto EMPTY>
+<!ATTLIST producto nombre CDATA #REQUIRED>     <!-- siempre debe aparecer -->
+<!ATTLIST producto categoria CDATA #IMPLIED>    <!-- opcional -->
+<!ATTLIST producto tienda CDATA #FIXED "Mercadona">  <!-- valor fijo o por defecto -->
