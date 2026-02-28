@@ -1,3 +1,13 @@
+<!ELEMENT portada EMPTY>
+
+<!ELEMENT extra ANY>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT notas (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+
 <!-- Biblioteca tiene tres tipos de elementos
  - libro: aparece 1 o más veces
  - revista: aparece 0 o más veces
@@ -20,13 +30,3 @@
 <!-- Un contacto puede tener o un email o un telefono, 
      pero no puede estar vacío o tener ambas-->
 <!ELEMENT contacto (email | telefono)>
-
-<!ELEMENT extra ANY>
-
-<!ELEMENT titulo (#PCDATA)>
-<!ELEMENT autor (#PCDATA)>
-<!ELEMENT notas (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT telefono (#PCDATA)>
-
-<!ELEMENT portada EMPTY>
