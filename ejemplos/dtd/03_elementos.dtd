@@ -8,7 +8,8 @@
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
 
-<!-- Biblioteca tiene tres tipos de elementos
+<!-- 
+Biblioteca tiene tres tipos de elementos
  - libro: aparece 1 o más veces
  - revista: aparece 0 o más veces
  - contacto: aparece 0 o 1 vez
@@ -16,7 +17,8 @@
 -->
 <!ELEMENT biblioteca (libro+, revista*, contacto?, extra?)>
 
-<!-- Un libro tiene los siguientes elementos:
+<!-- 
+Un libro tiene los siguientes elementos:
  - titulo
  - autor
  - notas: aparece 0 o más veces
@@ -24,9 +26,13 @@
 -->
 <!ELEMENT libro (titulo, autor, notas*, portada?)>
 
-<!-- Una revista tendrá un título y autor-->
+<!--
+ Una revista tendrá un título y autor
+-->
 <!ELEMENT revista (titulo, autor)>
 
-<!-- Un contacto puede tener o un email o un telefono, 
-     pero no puede estar vacío o tener ambas-->
+<!--
+Un contacto puede tener o un email o un telefono, 
+pero no puede estar vacío o tener ambas
+-->
 <!ELEMENT contacto (email | telefono)>
