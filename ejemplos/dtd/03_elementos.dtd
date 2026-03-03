@@ -1,38 +1,24 @@
-<!ELEMENT portada EMPTY>
+<!ELEMENT publica EMPTY>
 
 <!ELEMENT extra ANY>
 
-<!ELEMENT titulo (#PCDATA)>
-<!ELEMENT autor (#PCDATA)>
-<!ELEMENT notas (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
+
+<!ELEMENT libro (#PCDATA)>
+<!ELEMENT revista (#PCDATA)>
 
 <!-- 
 Biblioteca tiene tres tipos de elementos
  - libro: aparece 1 o más veces
  - revista: aparece 0 o más veces
- - contacto: aparece 0 o 1 vez
- - extra: aparece 0 o 1 vez
+ - contacto: aparece 1 vez
 -->
-<!ELEMENT biblioteca (libro+, revista*, contacto?, extra?)>
-
-<!-- 
-Un libro tiene los siguientes elementos:
- - titulo
- - autor
- - notas: aparece 0 o más veces
- - portada: aparece 0 o 1 vez
--->
-<!ELEMENT libro (titulo, autor, notas*, portada?)>
-
-<!--
- Una revista tendrá un título y autor
--->
-<!ELEMENT revista (titulo, autor)>
+<!ELEMENT biblioteca (publica?, libro+, revista*, contacto)>
 
 <!--
 Un contacto puede tener o un email o un telefono, 
-pero no puede estar vacío o tener ambas
+pero no puede estar vacío o tener ambas. 
+Puede tener contenido extra.
 -->
-<!ELEMENT contacto (email | telefono)>
+<!ELEMENT contacto ((email | telefono), extra?)>

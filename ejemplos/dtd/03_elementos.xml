@@ -2,41 +2,23 @@
 <!DOCTYPE biblioteca SYSTEM "03_elementos.dtd">
 <biblioteca>
 
-    <!-- Libro con varias notas y portada -->
-    <libro>
-        <titulo>Aprendiendo XML</titulo>
-        <autor>Juan Pérez</autor>
-        <notas>Incluye ejemplos prácticos</notas>
-        <notas>Revisar capítulos 3 y 4</notas>
-        <portada/>
-    </libro>
+    <publica/>
 
-    <!-- Otro libro sin notas -->
-    <libro>
-        <titulo>Programación en Python</titulo>
-        <autor>María López</autor>
-    </libro>
+    <libro>Aprendiendo XML</libro>
+    <libro>Programación en Python</libro>
 
-    <!-- Revistas opcionales -->
-    <revista>
-        <titulo>Revista Tech</titulo>
-        <autor>Editorial Tech</autor>
-    </revista>
+    <revista>Revista Tech</revista>
+    <revista>Revista Ciencia</revista>
 
-    <revista>
-        <titulo>Revista Ciencia</titulo>
-        <autor>Equipo Ciencia</autor>
-    </revista>
-
-    <!-- Contacto opcional con email -->
     <contacto>
         <email>info@biblioteca.com</email>
+        <!-- <telefono>673 12 42 52</telefono> -->
+
+        <!-- Contenido adicional que se puede adañir. Tiene cualquier tipo de dato al ser ANY -->
+        <extra>
+            Este espacio permite dar información extra
+            <email>any@gmail.com</email>
+        </extra>
     </contacto>
 
-    <!-- Contenido adicional que se puede adañir. Tiene cualquier tipo de dato al ser ANY -->
-    <!-- <extra>
-        Este espacio permite dar información extra
-        <email>any@gmail.com</email>
-    </extra> -->
-    
 </biblioteca>
