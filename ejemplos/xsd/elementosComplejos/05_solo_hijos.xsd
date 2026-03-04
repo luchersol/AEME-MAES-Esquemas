@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+        TIPO COMPLEJO: SOLO HIJOS
+        Temática: Aeropuerto
+
+        Hay tres formas de indicar los hijos de un elemento:
+
+        xs:sequence → los hijos deben aparecer EN ESE ORDEN exacto
+        xs:all      → los hijos pueden aparecer EN CUALQUIER ORDEN
+        xs:choice   → solo aparece UNO de los hijos posibles
+    -->
+
+    <xs:element name="aeropuerto">
+        <xs:complexType>
+            <xs:sequence>
+
+                <!-- SEQUENCE: origen, destino y hora deben ir en ese orden -->
+                <xs:element name="vuelo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="origen"  type="xs:string"/>
+                            <xs:element name="destino" type="xs:string"/>
+                            <xs:element name="hora"    type="xs:time"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- ALL: nombre, apellidos y pasaporte en cualquier orden -->
+                <xs:element name="pasajero">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="nombre"    type="xs:string"/>
+                            <xs:element name="apellidos" type="xs:string"/>
+                            <xs:element name="pasaporte" type="xs:string"/>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- CHOICE: el equipaje es de bodega O de cabina, nunca los dos -->
+                <xs:element name="equipaje">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="bodega" type="xs:string"/>
+                            <xs:element name="cabina" type="xs:string"/>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,14 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="titulo" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>
+                El título del libro. Máximo 100 caracteres.
+            </xs:documentation>
+            <xs:appinfo>
+                Información adicional para aplicaciones que procesan el XML.
+            </xs:appinfo>
+        </xs:annotation>
+    </xs:element>
+
+</xs:schema>

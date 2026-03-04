@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:noNamespaceSchemaLocation="02_elemento_vacio_atributos.xsd"
+          id="1" nombre="Teclado mecánico" precio="79.99" stock="15"/>

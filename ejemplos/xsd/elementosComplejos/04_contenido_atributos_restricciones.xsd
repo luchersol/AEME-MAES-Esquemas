@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Paso 1: definir el tipo restringido -->
+    <xs:simpleType name="tipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse"/> <!-- se eliminan los espacios -->
+            <xs:enumeration value="María"/>
+            <xs:enumeration value="Juan"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Paso 2: usarlo en el elemento y añadir el atributo -->
+    <xs:element name="nombre">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="tipoNombre">
+                    <xs:attribute name="adulto" type="xs:boolean"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

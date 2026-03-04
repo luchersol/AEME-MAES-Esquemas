@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE persona [     
+   <!-- Faltaba incluir que el elemento raíz es persona y 
+        este tiene el atributo nombre -->
+   <!ELEMENT persona (nombre)> 
+   <!ELEMENT nombre (#PCDATA)> 
+]> 
+<persona>     
+   <nombre>25</nombre> 
+</persona>

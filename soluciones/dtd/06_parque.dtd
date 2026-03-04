@@ -1,0 +1,5 @@
+<!ELEMENT parque (arbol, banco, fuente, mascota)>
+<!ELEMENT arbol (#PCDATA)>
+<!ELEMENT banco (#PCDATA)>
+<!ELEMENT fuente (#PCDATA)>
+<!ELEMENT mascota (#PCDATA)>

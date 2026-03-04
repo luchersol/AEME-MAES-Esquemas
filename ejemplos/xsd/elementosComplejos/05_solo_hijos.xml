@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TIPO COMPLEJO: SOLO HIJOS
+    Temática: Aeropuerto
+
+    <vuelo>    → sequence: origen, destino y hora en ese orden exacto
+    <pasajero> → all:      los campos pueden venir en cualquier orden
+    <equipaje> → choice:   solo bodega O cabina, nunca los dos a la vez
+-->
+<aeropuerto
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="05_solo_hijos.xsd">
+
+    <!-- SEQUENCE: obligatorio respetar el orden origen → destino → hora -->
+    <vuelo>
+        <origen>Madrid</origen>
+        <destino>Roma</destino>
+        <hora>08:30:00</hora>
+    </vuelo>
+
+    <!-- ALL: los campos pueden aparecer en cualquier orden -->
+    <pasajero>
+        <pasaporte>AAB123456</pasaporte>
+        <nombre>Carlos</nombre>
+        <apellidos>Martínez López</apellidos>
+    </pasajero>
+
+    <!-- CHOICE: solo se elige una de las dos opciones -->
+    <equipaje>
+        <bodega>Maleta grande azul</bodega>
+    </equipaje>
+
+</aeropuerto>

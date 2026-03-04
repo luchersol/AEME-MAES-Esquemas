@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TIPO COMPLEJO: CONTENIDO MIXTO
+    Temática: Recetario de cocina
+
+    <paso> combina texto libre con etiquetas hijas intercaladas.
+    El texto y las etiquetas conviven dentro del mismo elemento.
+-->
+<receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="06_contenido_mixto.xsd">
+    Añade <cantidad>200g</cantidad> de <ingrediente>harina</ingrediente>
+    y mezcla con las <utensilio>varillas</utensilio> hasta que no queden grumos.
+</receta>

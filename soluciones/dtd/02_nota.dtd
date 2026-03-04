@@ -1,0 +1,7 @@
+<!-- Elemento raíz -->
+<!ELEMENT nota (para, de, cuerpo)>
+
+<!-- Elementos hijos -->
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>

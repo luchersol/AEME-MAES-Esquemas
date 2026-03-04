@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nota [
+    <!-- Elemento raíz -->
+    <!ELEMENT nota (para, de, cuerpo)>
+
+    <!-- Elementos hijos -->
+    <!ELEMENT para (#PCDATA)>
+    <!ELEMENT de (#PCDATA)>
+    <!ELEMENT cuerpo (#PCDATA)>
+]>
+<nota>
+   <para>José</para>
+   <de>Marcos</de>
+   <cuerpo>Buenos días</cuerpo>
+</nota>

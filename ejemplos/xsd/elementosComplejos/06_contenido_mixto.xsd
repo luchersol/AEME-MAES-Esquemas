@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+        TIPO COMPLEJO: CONTENIDO MIXTO
+        Temática: Recetario de cocina
+
+        Un <receta> mezcla texto libre con etiquetas dentro:
+          "Añade <cantidad>200g</cantidad> de harina y mezcla bien."
+
+        Para permitir esto se usa mixed="true" en xs:complexType.
+        Sin mixed="true", el texto entre etiquetas no estaría permitido.
+    -->
+
+    <xs:element name="receta">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element name="cantidad"    type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="ingrediente" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="utensilio"   type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
