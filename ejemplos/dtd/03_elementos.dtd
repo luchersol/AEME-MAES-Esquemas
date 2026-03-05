@@ -4,12 +4,12 @@
 
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
-
 <!ELEMENT libro (#PCDATA)>
 <!ELEMENT revista (#PCDATA)>
 
 <!-- 
 Biblioteca tiene tres tipos de elementos
+ - publica: aparece 0 o 1 vez
  - libro: aparece 1 o más veces
  - revista: aparece 0 o más veces
  - contacto: aparece 1 vez

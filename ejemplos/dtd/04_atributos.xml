@@ -2,7 +2,7 @@
 <!DOCTYPE productos SYSTEM "04_atributos.dtd">
 <productos>
 
-    <!-- 1. Falta el atributo obligatorio 'nombre'. Aunque esté vacio -->
+    <!-- 1. El atributo 'nombre' es obligatorio. Aunque esté vacio -->
     <!-- 2. El atributo categoría, como se observa, puede existir o no al ser opcional -->
     <producto nombre="" />
     <producto nombre="Leche" categoria="Lácteos" />
